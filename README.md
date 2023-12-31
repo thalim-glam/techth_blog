@@ -21,4 +21,12 @@
   - [4] Open the integrated terminal or git bash to test the application.
   - [5] Please refer to [Tests](#tests) section for further information regarding testing.
 
+## Required Task 
+- User Story 
+  ```
+  AS A developer who writes about tech
+  I WANT a CMS-style blog site
+  SO THAT I can publish articles, blog posts, and my thoughts and opinions
+  ```
+
 ### Done By: Tasneem Halim 😎
