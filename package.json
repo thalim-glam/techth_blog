@@ -1,0 +1,24 @@
+{
+  "name": "techth_blog",
+  "version": "1.0.0",
+  "description": "- This application will build a CMS style blog site similar to any wordpress site where developers can publish their blogs, comment on other's posts and see their blog's update. The application follows MVC paradigm in its architectural stucture and is deployed to Heroku. For templating language I used Handlebars.js, Sequelizer as ORM and express-session as npm package for authentication.",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js",
+    "seed": "node seeds/seed.js"
+  },
+  "keywords": [],
+  "author": "Tasneem",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.18.2",
+    "bcrypt": "^5.0.0",
+    "connect-session-sequelize": "^7.0.4",
+    "dotenv": "^8.2.0",
+    "express-handlebars": "^5.2.0",
+    "express-session": "^1.17.1",
+    "mysql2": "^2.2.5",
+    "sequelize": "^6.3.5"
+  }
+}
