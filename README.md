@@ -76,4 +76,56 @@
     - Saving New note ![Screenshot of Saving new note]()
     - Deleting Note (BONUS) ![Screenshot of Deleting previously saved note]()
 
+## Command line code
+
+I used the following command lines:
+- npm i
+- npm run start
+- git status
+- git add -A
+- git commit -m "Comment goes here"
+- git pull origin main
+- git push
+- git branch
+- git checkout main
+- git checkout -b feature/add-branch
+
+## Credits
+
+Apart from me :D the credit also goes to my Instructor, the TAs, my Tutor, Classmates, and 
+- Class Recordings
+- https://www.geeksforgeeks.org/
+- https://stackoverflow.com/
+- https://sequelize.org/
+- https://dev.mysql.com/
+- https://google.com/
+
+## License
+ ![Github license](https://img.shields.io/badge/license-MIT-blue.svg) 
+
+## Tests
+
+To test this application please type, 
+  - npm i [To install node modules ]
+  - npm i express [To install express ]
+  - npm run start [ To start the server ]
+  - Open web browser 
+  - You can also use Innsomnia/postman to test the application
+  - Click here for deployed Heroku link : 
+
+## Deploying to Heroku
+:) This is suggested in the Heroku website.
+:) Therefore using it for testing purpose.
+:) Please feel free to click the button below 
+
+```
+$ heroku create
+$ git push heroku main
+$ heroku open
+```
+or
+
+[![Deploy to Heroku](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy)
+
+
 ### Done By: Tasneem Halim 😎
