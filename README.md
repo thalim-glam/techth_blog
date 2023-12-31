@@ -64,5 +64,16 @@
   WHEN I am idle on the site for more than a set time
   THEN I am able to view posts and comments but I am prompted to log in again before I can add, update, or delete posts
   ```
+## User Instruction
+
+  - Click here for the repository:  
+  - Click here for Readme file: 
+  - Click here for the Heroku-deployed link :  
+  - Here is a sample screenshots of my application :
+    - Walkthrough Video link: 
+    - Initial Page ![Screenshot of Initial Page](./public/images/initial_page.png)
+    - Existing notes ![Screenshot of Showing existing notes]()
+    - Saving New note ![Screenshot of Saving new note]()
+    - Deleting Note (BONUS) ![Screenshot of Deleting previously saved note]()
 
 ### Done By: Tasneem Halim 😎
