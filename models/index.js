@@ -1,3 +1,14 @@
-const Category = require('./Category');
+const User = require('./User');
+const Blog = require('./Blog');
 
-module.exports = {Category};
+Blog.belongsTo(User, {
+  foreignKey: 'userId',
+  onDelete: 'CASCADE'
+})
+
+
+
+
+
+
+module.exports = {User, Blog};
