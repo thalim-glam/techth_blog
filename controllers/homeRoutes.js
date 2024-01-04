@@ -5,7 +5,7 @@ const withAuth = require('../utils/auth');
 
 router.get('/', async (req, res) => {
   try {
-    
+
     // const dbCategoryData = await Category.findAll({
     //   include: [
     //     {
@@ -30,11 +30,11 @@ router.get('/', async (req, res) => {
 // If the user is logged in, they can see the post data
 router.get('/post/:id', async (req, res) => {
   try {
-    
-    const dbPostData = await Post.findByPk( 
+
+    const dbPostData = await Post.findByPk(
       req.params.id
-      );
-      const post = dbPostData.get({plain:true});
+    );
+    const post = dbPostData.get({ plain: true });
 
   } catch (error) {
     console.log(error);

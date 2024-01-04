@@ -11,4 +11,4 @@ Blog.belongsTo(User, {
 
 
 
-module.exports = {User, Blog};
+module.exports = { User, Blog };
