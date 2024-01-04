@@ -4,13 +4,13 @@ const newFormHandler = async (event) => {
   const name = document.querySelector('#post-name').value.trim();
   const description = document.querySelector('#post-desc').value.trim();
 
-  
-    if (response.ok) {
-      document.location.replace('/posts');
-    } else {
-      alert('Failed to create post');
-    }
-  };
+
+  if (response.ok) {
+    document.location.replace('/posts');
+  } else {
+    alert('Failed to create post');
+  }
+};
 
 
 const delButtonHandler = async (event) => {
