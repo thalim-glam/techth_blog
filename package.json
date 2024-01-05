@@ -1,5 +1,5 @@
 {
-  "name": "book_club_blog_p2",
+  "name": "techth_blog",
   "version": "1.0.0",
   "description": "a collaborative project about a book blog created with node, express, mysql, and sequelize",
   "main": "server.js",
