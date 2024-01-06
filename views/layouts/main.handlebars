@@ -4,26 +4,34 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Book Club Blog Main Page</title>
+  <title> Tech Blog Challenge</title>
+  <link href="https://fonts.googleapis.com/css?family=IBM+Plex+Sans:400,400i,700&display=swap" rel="stylesheet">
   <link rel="stylesheet" type="text/css" href="/css/jass.css">
   <link rel="stylesheet" type="text/css" href="/css/style.css">
 </head>
 
-<body>
-  <header>
-    <h1>{{name}}</h1>
+<body class="flex-column min-100-vh">
+  <header class="hero">
+    <h1 class="app-title"><a href="/">The Tech Blog</a></h1>
   </header>
-  <nav>
-    <a href="/">Home</a>
-    <a href="/">Dashboard</a>
-    <a href ="/">Logout</a>
+  <nav class="navbar">
+    <ul>
+      <li class="li-inline nav-item"><a href="/">Home</a></li>
+      <li class="li-inline nav-item"><a href="/dashboard">Dashboard</a></li>
+      {{#unless loggedIn}}
+      <li class="li-inline nav-item"><a href="/login">Login</a></li>
+      {{/unless}}
+      <li class="li-inline nav-item"><a href="#" id="logout-link">Logout</a></li>
+    </ul>
   </nav>
   <main class="container container-fluid mt-5">
-      <!-- Render the sub layout -->
-      {{{ body }}}
-    </main>
-  <!-- Render script for logged in users only -->
+    {{{ body }}}
+  </main>
+    <footer class="flex-row justify-center">
+    &copy; Tasneem Tech Blog
+  </footer>
   {{#if logged_in}}
   <script src="/js/logout.js"></script>
   {{/if}}
 </body>
+</html>
