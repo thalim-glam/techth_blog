@@ -18,7 +18,7 @@ router.post('/', async (req, res) => {
 
   } catch (error) {
     console.log(error);
-    res.status(500).json(err);
+    res.status(500).json(error);
   }
 });
 
@@ -41,7 +41,7 @@ router.post('/login', async (req, res) => {
 
   } catch (error) {
     console.log(error);
-    res.status(500).json(err);
+    res.status(500).json(error);
   }
 })
 
@@ -51,7 +51,7 @@ router.get('/all', async (req, res) => {
     res.json(allUsers);
   } catch (error) {
     console.log(error);
-    res.status(500).json(err);
+    res.status(500).json(error);
   }
 })
 
