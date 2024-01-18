@@ -71,10 +71,10 @@
   - Click here for the Heroku-deployed link :  
   - Here is a sample screenshots of my application :
     - Walkthrough Video link: 
-    - Initial Page ![Screenshot of Initial Page](./public/images/initial_page.png)
-    - Existing notes ![Screenshot of Showing existing notes]()
-    - Saving New note ![Screenshot of Saving new note]()
-    - Deleting Note (BONUS) ![Screenshot of Deleting previously saved note]()
+    - Showing all post ![Screenshot of all post](./public/image/screenshot1.jpg)
+    - Screenshot -2  ![Screenshot-2s]()
+    - Screenshot -3 ![Screenshot-3]()
+    - Screenshot -4 ![Screenshot-4]()
 
 ## Command line code
 
