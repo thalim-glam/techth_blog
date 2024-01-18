@@ -3,14 +3,15 @@ const router = require('express').Router();
 const { Blog } = require('../../models');
 
 router.post('/', async (req, res) => {
+  console.log('here')
   try {
-    const { title, body } = req.body;
-    const newPost = await Post.create({
-      name: title,
-      description: body,
-      user_id: req.session.user_id,
+    const { name, description } = req.body;
+    const newPost = await Blog.create({
+      name: name,
+      description: description,
+      userId: req.session.userId
     });
-
+console.log({newPost, message:"New post"})
     res.status(200).json(newPost);
   } catch (err) {
     console.error(err);
@@ -20,10 +21,10 @@ router.post('/', async (req, res) => {
 
 router.delete('/:id', async (req, res) => {
   try {
-    const postData = await Post.destroy({
+    const postData = await Blog.destroy({
       where: {
         id: req.params.id,
-        user_id: req.session.user_id,
+        userId: req.session.userId,
       },
     });
 
@@ -38,5 +39,16 @@ router.delete('/:id', async (req, res) => {
     res.status(500).json(err);
   }
 });
+
+router.get('/allposts', async (req, res) => {
+  try {
+    const blogs = await Blog.findAll()
+    res.json(blogs);
+
+  } catch (err) {
+    console.error(err);
+    res.status(500).json(err);
+  }
+})
 
 module.exports = router;

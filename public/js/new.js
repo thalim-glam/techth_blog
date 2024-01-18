@@ -1,15 +1,15 @@
 const postHandler = async function (event) {
   event.preventDefault()
-  const title = document.querySelector('input[name="post-title"]');
-  const body = document.querySelector('textarea[name="post-body"]');
+  const name = document.querySelector('input[name="post-title"]');
+  const description = document.querySelector('textarea[name="post-body"]');
 
 
 
-  await fetch(`/api/blog`,{
+  await fetch(`/api/posts`,{
     method: "POST",
     body: JSON.stringify({
-     title: title.value,
-     body: body.value
+     name: name.value,
+     description: description.value
     }),
     headers: {'Content-Type': 'application/json'},
 

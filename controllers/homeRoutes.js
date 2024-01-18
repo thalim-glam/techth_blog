@@ -1,12 +1,16 @@
 //Creating home routes for authentication
 const router = require('express').Router();
-const { Category, Post, User } = require('../models');
+const { Category, Blog, User } = require('../models');
 const withAuth = require('../utils/auth');
 
 router.get('/', async (req, res) => {
   try {
+const blogData = await Blog.findAll({
+  include:[User]
+})
+const blogs = blogData.map((blog) => blog.get({plain: true}))
 
-    res.render('homepage');
+    res.render('all-posts', {blogs});
   } catch (err) {
     console.log(err);
     res.status(500).json(err);
