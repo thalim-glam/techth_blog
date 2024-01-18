@@ -9,11 +9,11 @@
   <link rel="stylesheet" type="text/css" href="/css/jass.css">
   <link rel="stylesheet" type="text/css" href="/css/style.css">
 </head>
+<header class="hero">
+  <h1 class="app-title"><a href="/">The Tech Blog</a></h1>
+</header>
 
 <body class="flex-column min-100-vh">
-  <header class="hero">
-    <h1 class="app-title"><a href="/">The Tech Blog</a></h1>
-  </header>
   <nav class="navbar">
     <ul>
       <li class="li-inline nav-item"><a href="/">Home</a></li>
@@ -27,11 +27,12 @@
   <main class="container container-fluid mt-5">
     {{{ body }}}
   </main>
-    <footer class="flex-row justify-center">
+  <footer class="flex-row justify-center">
     &copy; Tasneem Tech Blog
   </footer>
   {{#if logged_in}}
   <script src="/js/logout.js"></script>
   {{/if}}
 </body>
+
 </html>
