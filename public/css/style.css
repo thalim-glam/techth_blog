@@ -81,8 +81,8 @@ p {
 }
 .navbar {
   width: 100%;
-  position: fixed;
-  background-color: #da8c0d;
+  position: relative;
+  background-color: #eb9811;
 }
 .container{
   width: 100%;
