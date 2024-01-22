@@ -1,18 +1,16 @@
 <div id="x">
-  {{#each blogs as |blog|}}
+  {{#each newPost as |blog|}}
   {{!-- {{> blogItem blog}} --}}
   <a href="/post/{{id}}">
     <div class="col-8">{{blog.name}}</div>
   </a>
   </h2>
-  <div class="col-3">posted by {{user.username}}
+  <div class="col-3">posted by {{user.name}}
   </div>
 </div>
 <p class="card-body">
   {{blog.description}}
 </p>
 {{/each}}
-
-blah blah blah blah
 
 </div>
