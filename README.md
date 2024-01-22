@@ -72,9 +72,9 @@
   - Here is a sample screenshots of my application :
     - Walkthrough Video link: 
     - Showing all post ![Screenshot of all post](./public/image/screenshot1.jpg)
-    - Screenshot -2  ![Screenshot-2s]()
-    - Screenshot -3 ![Screenshot-3]()
-    - Screenshot -4 ![Screenshot-4]()
+    - Login Page  ![Screenshot-2](./public/image/Login_page.png)
+    - Blogpost from one user ![Screenshot-3](./public/image/Userpost.jpg)
+    - Blogpost from multiple user ![Screenshot-4](./public/image/Multiple_user.png)
 
 ## Command line code
 
