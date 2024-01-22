@@ -13,7 +13,7 @@ router.get('/', withAuth, async  (req,res) => {
       }
     })
     const blogs = blogData.map((blog) => blog.get({plain: true}))
-    console.log({blogs})
+    console.log({blogs}) // -----------------------------------------------------
     res.render('all-post-admin',{layout: 'dashboard', blogs})
   } catch (error) {
     console.error(error)

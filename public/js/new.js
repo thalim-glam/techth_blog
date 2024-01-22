@@ -14,6 +14,6 @@ const postHandler = async function (event) {
     headers: {'Content-Type': 'application/json'},
 
   })
-  document.location.replace('/dashboard')
+  document.location.replace('/')
 }
 document.querySelector('#new-post-form').addEventListener('submit', postHandler);

@@ -1,8 +1,17 @@
+    <div class="row">
+      <div class="col-auto">
+        <h2> Username: {{user.name}} </h2>
+      </div>
+    </div>
 <div class="card-body">
   <a href="dashboard/edit/{{id}}">
+    <br>
     <div class="card-header flex-row justify-space-between">
-      <div class="col-8">Post Title: {{postTitle}}</div>
-      <div class="col-4">posted by {{user.username}} on {{format_date dateCreated}}</div>
-    </div>  
+      <div class="col-8">Post Title: {{name}}</div>
+      <div class="col-4">posted by {{user.name}} on {{format_date date_created}}</div>
+    </div>
+    <div class="card-body flex-row justify-space-between">
+      <div class="col-8">Post Content: {{description}}</div>
+    </div>
   </a>
 </div>
