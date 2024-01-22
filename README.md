@@ -70,7 +70,7 @@
   - Click here for Readme file: 
   - Click here for the Heroku-deployed link :  
   - Here is a sample screenshots of my application :
-    - Walkthrough Video link: 
+    - Heroku Deployed link: https://thomework14-f428e50cb4fe.herokuapp.com/ 
     - Showing all post ![Screenshot of all post](./public/image/screenshot1.jpg)
     - Login Page  ![Screenshot-2](./public/image/Login_page.png)
     - Blogpost from one user ![Screenshot-3](./public/image/Userpost.jpg)
