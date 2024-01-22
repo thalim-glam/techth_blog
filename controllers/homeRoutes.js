@@ -1,6 +1,6 @@
 //Creating home routes for authentication
 const router = require('express').Router();
-const { Category, Blog, User } = require('../models');
+const { Blog, User } = require('../models');
 const withAuth = require('../utils/auth');
 
 router.get('/', async (req, res) => {

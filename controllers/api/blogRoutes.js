@@ -1,9 +1,7 @@
 const router = require('express').Router();
-
-const { Blog } = require('../../models');
+const { User, Blog } = require('../../models');
 
 router.post('/', async (req, res) => {
-  console.log('here')
   try {
     const { name, description } = req.body;
     const newPost = await Blog.create({
@@ -11,7 +9,7 @@ router.post('/', async (req, res) => {
       description: description,
       userId: req.session.userId
     });
-console.log({newPost, message:"New post"})
+    console.log({ newPost, message: "New post" })
     res.status(200).json(newPost);
   } catch (err) {
     console.error(err);
